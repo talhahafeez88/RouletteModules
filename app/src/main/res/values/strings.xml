@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RouletteModules</string>
+
+    <string name="ok">OK</string>
+    <string name="sent">Sent!</string>
+
+    <string name="videoMaxLengthReachedMessage">The maximum length for this video has been reached.</string>
+    <string name="videoMaxLengthReachedTitle">Video Recording Stopped</string>
+    <string name="use_video">Use Video</string>
+
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_video_rec_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    tools:context=".send_video.VideoRecActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <!--<SurfaceView-->
+    <!--android:id="@+id/mediaplayer_surfaceView"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:visibility="gone" />-->
+
+    <TextView
+        android:id="@+id/timerVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/videoTv_pad_w"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/video_timer_size"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_video_rec_snackbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_overlay"
+        android:padding="@dimen/videoTv_pad_snackbar"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="OnUseVideoClick"
+            android:text="Use Video"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="OnVidRetakeClick"
+            android:text="Retake"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:onClick="startVideoPlayer"
+            android:src="@drawable/ic_play_arrow_white_36dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_video_rec_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:translationZ="1dp">
+
+        <ImageView
+            android:id="@+id/btnCameraSwitch"
+            android:layout_width="@dimen/videoRec_wh"
+            android:layout_height="@dimen/videoRec_wh"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/videoRec_margin"
+            android:background="@android:color/white"
+            android:onClick="OnCameraSwitchClick"
+            android:src="@drawable/camera_switch" />
+
+        <ImageView
+            android:id="@+id/btnRecord"
+            android:layout_width="@dimen/videoRec_wh"
+            android:layout_height="@dimen/videoRec_wh"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/videoRec_margin"
+            android:onClick="OnVidPlayPauseClick"
+            android:src="@drawable/video_rec_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/videoRec_margin"
+            android:background="@drawable/video_text_bg"
+            android:paddingBottom="@dimen/videoTv_pad_h"
+            android:paddingLeft="@dimen/videoTv_pad_w"
+            android:paddingRight="@dimen/videoTv_pad_w"
+            android:paddingTop="@dimen/videoTv_pad_h"
+            android:text="Video"
+            android:textColor="@color/yellow" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_video_rec_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="OnCancelClick"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Cancel"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="genral_margin_top">10dp</dimen>
+    <dimen name="genral_padding_right">10dp</dimen>
+    <dimen name="genral_padding_left">10dp</dimen>
+    <dimen name="margin_between_label_name">7dp</dimen>
+    <dimen name="font_message_size">14sp</dimen>
+    <dimen name="font_name_size">17sp</dimen>
+    <dimen name="confirmation_dialog_top_padding">25dp</dimen>
+
+    <dimen name="videoTv_pad_w">10dp</dimen>
+    <dimen name="videoTv_pad_h">3dp</dimen>
+    <dimen name="video_timer_size">25sp</dimen>
+    <dimen name="videoTv_pad_snackbar">12dp</dimen>
+
+    <dimen name="videoRec_wh">30dp</dimen>
+    <dimen name="videoRec_margin">10dp</dimen>
+
+
+
+</resources>
